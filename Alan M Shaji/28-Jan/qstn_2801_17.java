@@ -10,7 +10,7 @@ public class qstn_2801_17 {
 		  hash_map.put(3, "Black");
 		  hash_map.put(4, "White");
 		  hash_map.put(5, "Blue");
-		  System.out.println(hash_map);
+		  System.out.println(hash_map.values);
 
 	}
 
