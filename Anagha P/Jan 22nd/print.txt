@@ -1,0 +1,19 @@
+public class program6_printmsg {
+
+	public static void main(String[] args) {
+		int i;
+		for(i=0;i<20;i++)
+		{
+			System.out.print("*");
+		}
+		System.out.println("\nI am Learning Java\n");
+		
+		for(i=0;i<20;i++)
+		{
+			System.out.print("*");
+		}
+	
+
+	}
+
+}

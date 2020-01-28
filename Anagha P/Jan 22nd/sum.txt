@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class program5_sum_avg {
+
+	public static void main(String[] args) {
+		int i,s=0,sum=0,avg=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the values");
+		for(i=0;i<5;i++)
+		{
+			s=sc.nextInt();
+			sum=sum+s;
+		}
+		avg=sum/5;
+		
+		System.out.println("sum is"+sum);
+		System.out.println("average is"+avg);
+
+	}
+
+}

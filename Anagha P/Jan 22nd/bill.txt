@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class program24_calculate_bill {
+
+	public static void main(String[] args) {
+		int oldm,newm,unit=0,amount;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the new meter reading");
+		newm=sc.nextInt();
+		System.out.println("enter the old meter reading");
+		oldm=sc.nextInt();
+		unit=newm-oldm;
+		if(unit>=1 && unit<=100)
+		{
+			System.out.println(" free");
+		
+		}
+		else if(unit>=101 && unit<=200)
+		{
+			System.out.println("bill is"+(unit*1));
+		}
+		else if(unit>=201 && unit<=300)
+		{
+			System.out.println("bill is"+(unit*2));
+		}
+		else if(unit>=301 && unit<=400)
+		{
+			System.out.println("bill is"+(unit*3));
+		}
+		else
+		{
+			amount=unit*4;
+			System.out.println("bill is"+(amount+(amount*10/100)));
+		}
+	}
+
+}
