@@ -1,0 +1,25 @@
+package Package3;
+
+import java.util.ArrayList;
+
+public class program107_set6_q7 {
+
+	public static void main(String[] args) {
+		ArrayList<String>  color = new ArrayList<String>();
+          color.add("Red");
+		  color.add("Green");
+		  color.add("Blue");
+		  color.add("Pink");
+
+		  System.out.println("Original array list: " + color);
+		  String new_color = "White";
+		  color.set(2,new_color);
+
+		  int num=color.size();
+		  System.out.println("Replace second element with 'White' "); 
+		  for(int i=0;i<num;i++)
+		  System.out.println(color.get(i));
+
+	}
+
+}
