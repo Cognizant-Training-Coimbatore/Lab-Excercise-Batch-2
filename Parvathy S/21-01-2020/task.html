@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body style= "background-color: skyblue;background-image: url(leaf.jpg);">
+	<form method="post">
+	<table>
+		<th colspan="5"><h1 style="color: white">FORM</h1></th>
+		<tr>
+			<td style="color: white">Full name</td>
+			<td>:</td>
+			<td><input type="text" placeholder="First name" name="" style="text-transform: uppercase" title="Mandatory field" required=""></td>
+			<td><input type="text" placeholder="Middle name" name="" style="text-transform: uppercase"></td>
+                        <td><input type="text" placeholder="Last name" name="" style="text-transform: uppercase" title="Mandatory field" required=""></td>
+		</tr>
+		<tr>
+			<td style="color: white">Mobile No:</td>
+			<td>:</td>
+			<td>
+				<select>
+					<option>+91</option>
+				</select>
+			</td>
+			<td style="color: white">Phone Number: <input type="tel" id="phone" pattern="[0-9]{10}" title="Should contain only 10 digits" required=""></td>
+		</tr>
+		<tr>
+			<td style="color: white">E-mail</td>
+			<td>:</td>
+			<td><input type="text" placeholder="mail id" name="" pattern="([A-Za-z0-9_\-\.])+@gmail.com" title="Must provide a gmail account" required=""></td>
+		
+		</tr>
+		<tr>
+			<td style="color: white">Gender</td>
+			<td>:</td>
+			<td style="color: white"><input type="radio" name="g">Male<br>
+			    <input type="radio" name="g">Female</td>
+		</tr>
+		<tr>
+			<td style="color: white">Qualification</td>
+			<td>:</td>
+			<td>
+				<select style="color: white">
+					<option>B.Tech</option>
+					<option>M.Tech</option>
+					<option>MBA</option>
+					<option>MCA</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td style="color: white">Hobbies</td>
+			<td>:</td>
+			<td style="color: white"><input type="checkbox" name="">Sports<br>
+			    <input type="checkbox" name="">Music<br>
+			    <input type="checkbox" name="">Gardening<br>
+			    <input type="checkbox" name="">Reading</td>
+		</tr>
+		<tr>
+			<td style="color: white">Username</td>
+			<td>:</td>
+			<td><input type="text" name="" required=""></td>
+		</tr>
+		<tr>
+			<td style="color: white">Password</td>
+			<td>:</td>
+			<td><input type="text" name="" required=""></td>
+		</tr>
+		<tr>
+			<td style="color: white">About yourself</td>
+			<td>:</td>
+			<td>
+				<textarea rows="6" pattern=""></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="Submit" name="submit" value="Submit"/></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
