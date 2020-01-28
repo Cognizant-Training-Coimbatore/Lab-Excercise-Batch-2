@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul class="example">
+	<li class="child">coffe</li>
+	<li class="child">tea</li>
+
+</ul>
+<button onclick="myFunction()" >try it</button>
+<script type="text/javascript">
+	function myFunction(){
+	var list=document.getElementByClassName("example")[0];
+	list.getElementByClassName("child")[0].innerHTML="milk";
+}
+</script>
+</body>
+</html>
