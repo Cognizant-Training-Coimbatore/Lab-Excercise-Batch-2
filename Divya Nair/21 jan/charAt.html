@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function reverseString(str) {
+  			if (str === "")
+    			return "";
+  			else
+    			return reverseString(str.substr(1)) + str.charAt(0);
+		}
+		reverseString("hello");
+		
+	</script>
+</head>
+<body>
+	<input type="button" value="Reverse" name="rev" onclick="reverseString()">;
+
+</body>
+</html>
