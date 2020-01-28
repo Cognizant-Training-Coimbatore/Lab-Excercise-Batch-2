@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script type="text/javascript">
+		var a=prompt("Enter the value a:");
+		function call() {
+		var n=Number(prompt("Enter the value n:"));
+
+			document.writeln("Character at "+n+" is "+a.charAt(n));// 1
+			//document.getElementById("demo").innerHTML=a.charAt(3);
+			var b=prompt("Enter the value b:");
+			document.writeln("After concatination the string is "+a.concat(b));
+			document.writeln("Length of the string b is "+b.length);
+			var s="";
+			for (var i = b.length - 1; i >= 0; i--) {
+				s=s+b.charAt(i);
+			}
+			document.write(s);
+			
+			document.write(a.lastIndexOf('a' ));
+		 } 
+		
+	</script>
+</head>
+<body>
+<p id="demo"></p>
+<input type="button" onclick="call()" value="first chat" name="">
+</body>
+</html>
