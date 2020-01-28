@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+
+</head>
+<body>
+	<script type="text/javascript">
+      /  function mobval() 
+        {
+            var phone = document.getElementById("mob").value;
+            re =/\+\ 91\d{10}/;
+            alert(re.test(phone));
+        }
+        /*function mailval()
+        {
+        	var m=document.getElementById("mail").pattern;
+        	//re =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]\"@gmail.com"/;
+        	//alert(re.test(m));        }
+        	document.getElementById("mail").innerHTML = m;
+        }*/
+    </script>
+	 
+<form method="post">
+	<table>
+		<th colspan="7"><h1>Registration Form</th>
+	<tr><!FULLNAME FIELD>
+		<td><b>Full Name</b></td>
+		<td><b>:</b></td>
+		<td><input type="text" required placeholder="First Name" name="" style="text-transform: uppercase;"></td>
+		<td><input type="text" placeholder="Middle Name" name=""></td>
+		<td><input type="text" required placeholder="Last Name" name=""></td>
+	</tr>
+		<tr><!MOBNUMBER FIELD>
+
+			<td><b>Mobile Number </b></td>
+			<td><b>:</b></td>
+			<td><input id="mob" type="Mobile" title="*The mobile number should be in the format: +91xxxxxxxxxx" required pattern="\+\ 91\d{10}" placeholder="Mobile Number" name="">
+				
+				
+			</td>
+		</tr>
+		<tr><!EMAIL FIELD>
+			<td><b>Email</b></td>
+			<td><b>:</b></td>
+			<td><input id="mail" type="text" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]\@gmail.com$" title="*The mailid should be in the format: xxxxx@gmail.com"required placeholder="Emailid" name="" ></td>
+			
+		<tr><!GENDER>
+			<td><b>Gender</b></td>
+			<td><b>:</b></td>
+			<td><input type="radio" name="g" >Male</td>
+			<td><input type="radio" name="g" >Female</td>
+		</tr>
+		<tr><!HOBBIES>
+			<td><b>Hobbies</b></td>
+			<td><b>:</b></td>
+			
+			<td>
+				<input type="checkbox" name="Reading">Reading
+				<input type="checkbox" name="Cooking">Cooking
+				<input type="checkbox" name="Movie">Movie
+				<input type="checkbox" name="Travelling">Travelling
+			</td>
+			</tr>
+		<tr><!QUALIFICATION>
+			<td><b>Qualification</b></td>
+			<td><b>:</b></td>
+			<td><select>
+				<option>Btech</option>
+				<option>Bcom</option>
+				<option>Bsc</option>
+				<option>Mtech</option>
+				<option>MBA</option></select></td></tr>
+		<tr><!USERNAME>
+			<td><b>Username</b></td>
+			<td><b>:</b></td>
+			<td><input type="text" required placeholder="Username" name=""></td>
+		</tr>
+		<tr><!PASSWORD>
+			<td><b>Password</b></td>
+			<td>:</td>
+			<td><input type="Password" required placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name=""></td>
+		</tr>
+		<tr>
+			<td><b>About Yourself</b></td>
+			<td><b>:</b></td>
+			<td>
+			<td><textarea cols="25" rows="8" minlength="100"></textarea></td></tr>
+				
+		<tr>
+				<td><input type="submit" name="" value="Register"></td>
+			</tr>
+
+</body>
+</html>
