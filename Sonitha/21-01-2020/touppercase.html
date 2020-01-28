@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<input type="text" id="demo">
+
+
+
+
+<script type="text/javascript">
+	document.getElementById("demo").onkeypress()=function() {myFunction()}
+function myFunction() {
+  var str = "Hello World!";
+  var res = str.toUpperCase();
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>

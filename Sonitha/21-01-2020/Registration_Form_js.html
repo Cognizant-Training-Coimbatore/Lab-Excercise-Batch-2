@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link href="reg_formvalid.css" rel="stylesheet">
+
+<script type="text/javascript">
+	
+	function Reg_FormValidation()
+	{
+		var phonenumber= document.getElementById('mobileno') ;
+
+     if(Gender.value.length==0)
+      {
+
+		documet.getElementById('p4').innerText="*mandatory*";
+	 }
+	if(Hobbies.value.length==0)
+	  {
+
+		documet.getElementById('p5').innerText="*mandatory*";
+	  }
+	if(Qualifications.value.length==0)
+	  {
+
+		documet.getElementById('p6').innerText="*mandatory*";
+	   }
+
+	}
+
+	function inputphoneno(inputtxt)
+	{
+	
+	}
+</script>
+</head>
+<body>
+	<form name=sampleform onsubmit='return Reg_FormValidation()' method="post">
+		<table >
+			<th colspan="5"><h1>Sample Form</h1></th>
+			<tr>
+				<td>First Name</td>
+				<td>:</td>
+				<td>
+					<input id="firstname" type="text" name="" required placeholder="First Name" onkeyup="this.value = this.value.toUpperCase()" >
+				</td>
+   
+			</tr>
+			<tr>
+				<td>Mobile Number</td>
+				<td>:</td>
+				<td>
+					<select>
+						<option selected >Country Code</option>
+						<option required >India(+91)</option>
+					</select>
+					<input id="mobileno" type="number" name="" placeholder="Phone No:" maxlength="10">
+				</td>
+	   <p id="p2"></p>
+			</tr>			
+			<tr>
+				<td>Email Address</td>
+				<td>:</td>
+				<td>
+					<input id="emailaddress" type="email" name="" placeholder="gmail only">
+
+				</td>
+	    <p id="p3"></p>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>:</td>
+				<td>
+					<input type="radio" name="G">male
+					<input type="radio" name="G">Female
+				</td>
+		  <p id="p4"></p>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="">Painting
+					<input type="checkbox" name="">Cooking
+					<input type="checkbox" name="">Singing
+				</td>
+		   <p id="p5"></p>
+			</tr>
+			<tr>
+				<td>Qualifications</td>
+				<td>:</td>
+				<td>
+					<select>
+						<option selected>select</option>
+						<option>BE</option>
+						<option>BTech</option>
+						<option>MTech</option>
+						<option>MSE</option>
+					</select>
+				</td>
+		   <p id="p6"></p>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td>:</td>
+				<td>
+					<input id="username" type="text" name="" placeholder="username">
+				</td>
+		   <p id="p7"></p>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td>
+					<input id="password" type="text" name="" placeholder="password">
+
+				</td>
+		   <p id="p8"></p>
+			</tr>
+			<tr>
+				<td>About Yourself</td>
+				<td>:</td>
+				<td>
+					<textarea cols="25" rows="7"></textarea>
+				</td>
+		  <p id="p9"></p>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td>
+					<input type="submit" name="" value="Submit Form">
+				</td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+</html>
