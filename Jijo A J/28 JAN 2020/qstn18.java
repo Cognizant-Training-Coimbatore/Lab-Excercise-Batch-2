@@ -14,8 +14,7 @@ public class qstn18{
   System.out.println("Orginal TreeMap content: " + tree_map1);
   System.out.println("Checking the entry for 10: ");
   System.out.println("Value is: " + tree_map1.floorEntry(10));
-  System.out.println("Checking the entry for 30: ");
-  System.out.println("Value is: " + tree_map1.floorEntry(30));
+  
   System.out.println("Checking the entry for 70: ");
   System.out.println("Value is: " + tree_map1.floorEntry(70));
  }
