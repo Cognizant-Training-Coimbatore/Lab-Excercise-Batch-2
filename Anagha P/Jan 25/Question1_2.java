@@ -1,0 +1,17 @@
+package pack2;
+import pack1.Question1_1;
+
+public class Question1_2 extends Question1_1{
+	void display()
+	{
+		System.out.println(a1);
+	}
+	
+	
+
+public static void main(String[] args)
+{
+ Question1_2 ob=new Question1_2();
+ ob.display();
+}
+}
