@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" >
+		
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+
+form ul li label{
+float: left;
+clear: left;
+width: 100px;
+text-align: right;
+margin-right: 10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+form ul li input, select, span {
+float: left;
+margin-bottom: 10px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 230px;
+font-size:18px
+}
+
+p {
+margin-left: 70px;
+font-weight: bold;
+}
+
+	</style>
+	<script type="text/javascript">
+		function formValidation()
+{
+var fname = document.registration.firstname;
+var lname = document.registration.lastname;
+var umob = document.registration.MobileNo;
+var uemail = document.registration.email;
+var umsex = document.registration.msex;
+var ufsex = document.registration.fsex; 
+var uqualif = document.registration.qualification;
+var uid = document.registration.userid;
+var passid = document.registration.passid;
+
+
+if(allLetter(fname))
+{
+if(allLetters(lname))
+{ 
+if(allnumeric(umob))
+{
+if(ValidateEmail(uemail))
+{
+if(validsex(umsex,ufsex))
+{
+if(countryselect(uqualif))
+{
+if(userid_validation(uid,5,12))
+{
+if(passid_validation(passid,7,12))
+{
+}
+}
+} 
+}
+}
+}
+}
+}
+return false;
+}
+function allLetter(fname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+function allLetters(lname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+function allnumeric(umob)
+{
+  var phoneno = /^\d{10}$/;
+  if((inputtxt.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("message");
+        return false;
+        }
+function ValidateEmail(uemail)
+{
+var mailformat = /^[a-zA-Z0-9]+@gmail\.com$/;
+if(uemail.value.match(mailformat))
+{
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+uemail.focus();
+return false;
+}
+}
+function validsex(umsex,ufsex)
+{
+x=0;
+
+if(umsex.checked) 
+{
+x++;
+} if(ufsex.checked)
+{
+x++; 
+}
+if(x==0)
+{
+alert('Select Male/Female');
+umsex.focus();
+return false;
+}
+else
+{
+alert('Form Successfully Submitted');
+window.location.reload()
+return true;}
+}
+
+function userid_validation(uid,mx,my)
+{
+var uid_len = uid.value.length;
+if (uid_len == 0 || uid_len >= my || uid_len < mx)
+{
+alert("User Id should not be empty / length be between "+mx+" to "+my);
+uid.focus();
+return false;
+}
+return true;
+}
+function passid_validation(passid,mx,my)
+{
+var passid_len = passid.value.length;
+if (passid_len == 0 ||passid_len >= my || passid_len < mx)
+{
+alert("Password should not be empty / length be between "+mx+" to "+my);
+passid.focus();
+return false;
+}
+return true;
+}
+
+
+	</script>
+	
+</head>
+<body>
+<form name="" onSubmit="return formValidation();">
+	<ul>
+	
+		<li><label for="firstname">First Name:</label></li>
+		<li><input type="text" name="firstname" placeholder="FirstName" size="50" /></li>
+		
+		<li><label for="lastname">Last Name:</label></li>
+		<li><input type="text" name="lastname" placeholder="LastName" size="50" /></li>
+		<li><label for="MobileNo">Mobile No:</label></li>
+		<li><input type="text" name="Phone Number" pattern="/^\d{10}$/" title="">
+		</li>
+		<li><label for="email">Email Id:</label></li>
+		<li><input type="text" name="email" pattern="^[a-zA-Z0-9]+@gmail\.com$" required></input></li>
+		<li><label id="gender">Gender:</label></li>
+		<li><input type="radio" name="sex" value="Male" /><span>Male</span></li>
+		<li><input type="radio" name="sex" value="Female" /><span>Female</span></li>
+		<li><label>Hobbies:</label></li>
+		<li><input type="checkbox" name="read" value="en" checked /><span>Reading</span></li>
+		<li><input type="checkbox" name="poet" value="noen" /><span>Poetry</span></li>
+		<li><input type="checkbox" name="game" value="game" checked /><span>Gaming</span></li>
+		<li><input type="checkbox" name="sleep" value="sleep" /><span>Sleeping</span></li>
+		<li><input type="checkbox" name="tv" value="tv" /><span>Movies</span></li>
+		<li><label for="qualification">Qualification:</label></li>
+		<li><select name="qualification">
+		<option selected="" value="Default">(Please select your qualification)</option>
+		<option value="bt">B.Tech</option>
+		<option value="bc">B.Com</option>
+		<option value="mt">M.Tech</option>
+		<option value="mc">M.Com</option>
+		<option value="ba">BA</option>
+		<option value="ma">MA</option>
+		</select></li>
+		<li><label for="userid">User Name:</label></li>
+		<li><input type="text" name="userid" size="12" /></li>
+		<li><label for="passid">Password:</label></li>
+		<li><input type="password" name="passid" size="12" /></li>
+		<li><label for="desc">About:</label></li>
+		<li><textarea name="desc" id="desc"></textarea></li>
+		<li><input type="submit" name="submit" value="Submit" /></li>
+	</ul>
+</form>
+</body>
+</html>
