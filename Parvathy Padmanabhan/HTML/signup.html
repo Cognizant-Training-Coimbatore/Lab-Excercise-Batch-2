@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon Registration</title>
+<!-- </head>
+<body>
+<form name="newuser" action="" method="get">
+	<table align="center">
+		<th>
+			<img src="download.jpg"height="40" width="120">
+		</th>
+		<tr><td><h2>Create your account </h2></td></tr>
+		<tr><td> Your Name </td></tr>
+		<tr><td> <input type="text" required placeholder="" size="50" style="height:25px; width:385px"></td></tr>
+		<tr><td> Mobile Number </td></tr>
+		<tr>
+			<td><select style="height:25px; width:60px">
+				<option>(+91)</option>
+			</select>
+			<input type="tel" required placeholder="" maxlength="10" size="10" style="height:25px; width:320px"></td>
+		</tr>
+		<tr><td>Email (Optional)</td></tr>
+		<tr><td><input type="email" size="50" style="height:25px; width:385px"></td></tr></tr>
+		<tr><td>Password</td></tr>
+		<tr><td> <input type="password" required placeholder="At least 6 characters" minlength="6" size="50" style="height:25px; width:385px"></td></tr>
+		<tr></tr>
+		<tr><td>We will send you a text to verify your phone.</td></tr>
+		<tr  align ="center"><td> <input type="submit" name="LOGIN" id="Login" value="CONTINUE" style=" background-color: #FFD017; height:30px; width:395px"></td></tr>
+		
+	</table>
+</form> -->
+<style type="text/css">
+#logo
+		{
+			text-align: center;
+		}
+		#main 
+		{
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 2%;
+			border-color: lightgrey;
+			height: 80%;
+			width: 25%;
+			padding: 15px;	
+			margin: auto;
+		}
+		#header,#login, #usertextbox, #submit,#notice, #help, 
+		{
+			text-align: left;
+			border-style: none;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+		#Newuser
+		{
+
+			margin-top: 20px;
+			text-align: center;
+			font-size: 15px;
+		
+		}
+	</style>
+</head>
+<body>
+	<div id ="logo">
+		<img src="download.jpg" name="LOGO" height="40" width="120">
+	</div>
+	<form>
+	<div id="main">
+		<div id="header">
+			<p style="font-size: 25px; font: verdana">Create Account</p>
+		</div>
+		<div id="login">
+			
+		</div>
+		<div id="usertextbox">
+			Your Name
+			<input type="text" id="input" required placeholder=""  style="height: 25px; width: 95%; ">
+		</div>
+		<div id="mobile">
+			<br>
+			Mobile Number
+			<div id="code">
+				<select style="height:30px; width:18%">
+					<option>(+91)</option>
+				</select>
+				<input type="text" pattern="[0-9]{10}" required placeholder="" style="height:25px; width:76%"></td>
+			</div>
+			
+		</div>
+		
+			
+		<div id="usertextbox">
+			<br>
+			Email (Optional)
+			<input type="email"   style="height: 25px; width: 95%;">
+		</div>
+		
+		<div id="usertextbox">
+			<br>
+			Password
+			<input type="password" required placeholder="At least 6 characters" minlength="6" style="height: 25px; width: 95%;">
+		</div>
+		<div id="notice">
+			<p style="font-size: 15px;"> We will send you a text to verify your phone.Message and Data rates may apply.</p>
+		</div>
+		<div id="submit">
+			<input type="submit" name="Continue" value="Continue" style="height: 30px; width: 95%; background-color: #FFD017;">
+		</div>
+	</div>
+	</form>
+	<div id="Newuser">
+		Already have an account? <a href="new.html">Sign in</a>
+	</div>
+</body>	
+</html>
