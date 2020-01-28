@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VALIDATION FORM</title>
+  <script type="text/javascript">
+    var divs=new Array();
+    divs[0]= "errFirst";
+    divs[1]="errMob";
+    divs[2]="errEmail";
+    divs[3]="errGender";
+    divs[4]="errPassword";
+    divs[5]="errQualification";
+    divs[6]="errAbt";
+    function Validate()
+    {
+      var inputs = new Array();
+      inputs[0] = document.getElementById('first').value;
+      inputs[1] = document.getElementById('mobile').value;
+      inputs[2] = document.getElementById('email').value;
+      inputs[3] = document.getElementById('gender').value;
+      inputs[4] = document.getElementById('password').value;
+      inputs[5] = document.getElementById('qualification').value;
+      inputs[6] = document.getElementById('abt').value;
+
+      var errors = new Array();
+      errors[0] = "<span style='color:red'>Please enter your first name!</span>";
+      errors[1] = "<span style='color:red'>Please enter your mobile!</span>";
+      errors[2] = "<span style='color:red'>Please enter your email!</span>";
+      errors[3] = "<span style='color:red'>Please enter your gender!</span>";
+      errors[4] = "<span style='color:red'>Please enter your password!</span>";
+      errors[5] = "<span style='color:red'>Please enter your qualification!</span>";
+      errors[6] = "<span style='color:red'>Please enter your About!</span>";
+
+for (i in inputs)
+      {
+        var errMessage = errors[i];
+        var div = divs[i];
+        if (inputs[i] == "")
+          document.getElementById(div).innerHTML = errMessage;
+        else if (i==2)
+        {
+          var atpos=inputs[i].indexOf("@");
+          var dotpos=inputs[i].indexOf(".");
+          if(atpos>1 && dotpos=atpos+6)
+            document.getElementById(div).innerHTML = "OK!";
+          else
+            document.getElementById('errEmail').innerHTML = "<span style='color: red'>Enter a valid email address!</span>";
+        }
+       
+}}
+     
+
+
+
+</script>
+</head>
+<body>
+  <table id="table1">
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" id="first" onkeyup="validate();" /></td>
+        <td><div id="errFirst"></div></td>
+      </tr>
+      <tr>
+        <td>Mobile No.:</td>
+        <td><input type="number" id="mobile" onkeyup="validate();"/></td>
+        <td><div id="errLast"></div></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="text" id="email" onkeyup="validate();"/></td>
+        <td><div id="errEmail"></div></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        
+  <td>
+    <input type="radio" name="g">Male
+    <input type="radio" name="g">Female
+  </td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" id="confirm" onkeyup="validate();"/></td>
+        <td><div id="errConfirm"></div></td>
+      </tr>
+<tr>
+        <td>Qualifications:</td>
+        
+        <td><select>
+        <option selected></option>B TECH
+    <option>BE</option>
+    <option>MTECH</option>
+    <option>PHD</option>
+    </select></td>
+      </tr>
+      <tr>
+        <td>About:</td>
+        <td>
+    <textarea cols="17" row="6"></textarea></td>
+      </tr>
+</table>
+</body>
+</html>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<html>
+<head>
+  <title>Form Validation</title>
+  <script type="text/javascript">
+    var divs = new Array();
+    divs[0] = "errFirst";
+    divs[1] = "errMob";
+    divs[2] = "errEmail";
+    divs[3] = "errGender";
+    divs[4] = "errHobbies";
+    divs[5] = "errQual";
+    divs[6] = "errPass";
+    
+    function validate()
+	{
+      var inputs = new Array();
+      inputs[0] = document.getElementById('first').value;
+      inputs[1] = document.getElementById('mob').value;
+      inputs[2] = document.getElementById('email').value;
+      inputs[3] = document.getElementById('gender').value;
+      inputs[4] = document.getElementById('hobbies').value;
+      inputs[5] = document.getElementById('qualification').value;
+      inputs[6] = document.getElementById('password').value;
+      
+      for (i in inputs)
+      {
+        if(i==0)
+        {
+          if (inputs[i] == "")
+          alert("Must enter your name!");
+        }
+         else if (i==1)
+         {
+          if (inputs[i] == "")
+          alert("Must enter your mobile!");
+         }
+        
+
+        else if (i==2)
+        {
+          var atpos=inputs[i].indexOf("@");
+          var dotpos=inputs[i].lastIndexOf(".");
+          if (atpos<1 || dotpos<atpos+2 || dotpos+2>=inputs[i].length)
+        	alert("Please enter valid email!");
+          else
+        	document.getElementById(div).innerHTML = "OK!";
+        }
+else if(i==3)
+{
+var radios = document.getElementsByName("gender");
+    var formValid = false;
+
+    var i = 0;
+    while (!formValid && i < radios.length) {
+        if (radios[i].checked) formValid = true;
+        i++;        
+    }
+
+    if (!formValid) alert("Must check some option!");
+    return formValid;
+}
+
+else if(i==4)
+{
+  if(form.options[0].checked==false && form.options[1].checked==false && form.options[2].checked==false) {
+      document.getElementById('errHobbies').innerHTML = "<span style='color: red'>Choose any one option!</span>";
+      return false;
+    }}
+else if (i==5)
+                  {
+
+                var e = document.getElementById("qualification");
+                var strUser = e.options[e.selectedIndex].value;
+
+                var strUser1 = e.options[e.selectedIndex].text;
+                if(strUser==0)
+                {
+                    alert("Please select a qualification");
+                }
+            }
+                  
+
+       
+   </script>
+</head>
+<body>
+	<table id="table1">
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" id="first" onkeyup="validate();" /></td>
+        </tr>
+      
+      <tr>
+        <td>Mobile No:</td>
+        <td><input type="number" id="number" onkeyup="validate();"/></td>
+        </tr>
+      
+      <tr>
+        <td>Email:</td>
+        <td><input type="text" id="email" onkeyup="validate();"/></td>
+        </tr>
+      
+      <tr>
+        <td>Gender:</td>
+       <td>
+    <input type="radio" name="g">Male
+    <input type="radio" name="g">Female
+  </td>
+      </tr>
+      
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" id="password" onkeyup="validate();"/></td>
+        <td><div id="errPassword"></div></td>
+      </tr>
+     
+      <tr>
+        <td>Confirm Password:</td>
+        <td><input type="password" id="confirm" onkeyup="validate();"/></td>
+        <td><div id="errConfirm"></div></td>
+      </tr>
+      
+      <tr>
+        <td><input type="button" id="create" value="Create" onclick="validate();finalValidate();"/></td>
+        <td><div id="errFinal"></div></td>
+      </tr>
+	</table>
+</body>
+</html>
