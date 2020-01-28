@@ -12,7 +12,7 @@ public class qstn_2801_20 {
 			  System.out.println(tree_map);
 				System.out.println("Orginal TreeMap content: " + tree_map);
 				  System.out.println("Checking the entry for 3: ");
-				  System.out.println("Value is: " + tree_map.floorEntry(3));
+				 System.out.println("Value is: " + tree_map.headMap(3,true));
 
 	}
 
