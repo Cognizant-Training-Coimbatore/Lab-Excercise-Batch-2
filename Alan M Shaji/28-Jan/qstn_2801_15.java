@@ -17,12 +17,16 @@ public class qstn_2801_15 {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("enter a number\t:\t");
 		int a=sc.nextInt();
+		System.out.println(tree.ceiling(a));
+	
+		
+		/*
 		for(Integer obj:tree)
 		{
 			if(obj>a)
 				System.out.println(obj);
 		}
-
+*/
 	}
 
 }
