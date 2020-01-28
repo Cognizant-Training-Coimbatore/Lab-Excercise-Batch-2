@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="task.js">
+	</script>
+</head>
+<body>
+	<center><h1 >Fill The Form</h1></center>
+	<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >
+<center>
+	<table>
+	<tbody>
+			<tr>
+				<td>Name</td>
+				<td>:</td>
+				<td>
+					<input type="text" id="name" name="name" onkeyup="this.value=this.value.toUpperCase()">
+				</td>
+				<td width="6"></td>
+			</tr>
+	<tr>
+		<td>Email</td>
+		<td>:</td>
+		<td>
+			<input id="email" type="email" name="fEmail_addr">
+		</td>
+		<td width="6"></td>
+	</tr>
+	<tr>
+		<td>Phone number</td>
+		<td>:</td>
+		<td>
+			<input id="pnum" type="number"  name="fnumber">
+		</td>
+		<td width="6"></td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td>:</td>
+		<td>
+			<table>
+				<tr>
+					<td>
+						<input type="radio" name="gender">Male<br>
+						<input type="radio" name="gender">Female
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="6"></td>
+	</tr>
+	<tr>
+		<td>Hobby</td>
+		<td>:</td>
+		<td>
+			<table>
+				<tr>
+					<td>
+						<input type="checkbox">Singing
+					</td>
+					<td>
+						<input type="checkbox">Dancing
+					</td>
+					<td>
+						<input type="checkbox">Playing
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="6"></td>
+	</tr>
+	<tr>
+				<td>Qualification</td>
+				<td>:</td>
+				<td colspan="2">
+					<table>
+						<tr>
+							<td><input type="checkbox" name="">BE(CSE)</td>
+							<td><input type="checkbox" name="">ME(CSE)</td>
+							<td><input type="checkbox" name="">BE(ME)</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="">ME(ME)</td>
+							<td><input type="checkbox" name="">BE(EEE)</td>
+							<td><input type="checkbox" name="">ME(EEE)</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+	<tr>
+		<td>Username</td>
+		<td>:</td>
+		<td>
+			<input type="text" id="username" name="username">
+		</td>
+		<td width="6"></td>
+	</tr>
+	
+	<tr>
+		<td>Password</td>
+		<td>:</td>
+		<td>
+			<input type="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+		</td>
+		<td width="6"></td>
+	</tr>
+	<tr>
+		<td colspan="5" >
+			<textarea minlength="100">Write about yourself</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td>
+			<input type="submit" name="submit" value="Login" >
+		</td>
+	</tr>
+	</tbody>
+</table>
+</center>
+</form>
+</body>
+</html>
