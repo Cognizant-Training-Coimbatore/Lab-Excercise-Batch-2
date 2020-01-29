@@ -1,0 +1,57 @@
+package demo;
+import java.util.Scanner;
+public class Question8_array {
+ public static void main(String[] args) {
+  // TODO Auto-generated method stub
+  int arr[]=new int[10];
+  int i,j,n;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter the size for the array");
+  n=sc.nextInt();
+  System.out.println("enter the values for  array");
+  for(i=0;i<n;i++)
+  {
+   arr[i]=sc.nextInt();
+   
+  }
+  //ascending order sorting
+  for(i=0;i<n;i++)
+  {
+   for(j=i+1;j<n;j++)
+   {
+    if(arr[i]>arr[j])
+    {
+    int temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
+    }
+   }
+  }
+  System.out.println("arrray in ascending order");
+  for(i=0;i<n;i++)
+  {
+   System.out.print(arr[i]+" ");
+   
+  }
+  //descending order
+  for(i=0;i<n;i++)
+  {
+   for(j=i+1;j<n;j++)
+   {
+    if(arr[i]<arr[j])
+    {
+    int temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
+    }
+   }
+  }
+  
+  System.out.println("\narrray in descending order");
+  for(i=0;i<n;i++)
+  {
+   System.out.print(arr[i]+" ");
+   
+  }
+ }
+}
