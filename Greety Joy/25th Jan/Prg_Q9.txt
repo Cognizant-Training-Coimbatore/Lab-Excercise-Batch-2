@@ -1,0 +1,36 @@
+
+package demo;
+import java.util.Scanner;
+public class Question9_array {
+ public static void main(String[] args) {
+  // TODO Auto-generated method stub
+  int arr[]=new int[10];
+  int i,flag=0,n;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter the size for the array");
+  n=sc.nextInt();
+  System.out.println("enter the values for  array");
+  for(i=0;i<n;i++)
+  {
+   arr[i]=sc.nextInt();
+   
+  }
+  System.out.println("enter the value to be searched");
+  n=sc.nextInt();
+  for(i=0;i<n;i++)
+  {
+   if(arr[i]==n)
+   {
+    flag=1;
+    break;
+   }
+   
+  }
+  if(flag==1)
+  {
+   System.out.println("value is present at index:"+i);
+  }
+  else
+   System.out.println("not present");
+ }
+}
