@@ -23,7 +23,7 @@ int count=0;
         resultSet = statement.executeQuery("SELECT * FROM DEPT");
         resultSet.next();
         count=resultSet.getInt(1);
-            System.out.println(resultSet.getString(1));
+            System.out.println(count);
         }
 	}
 
