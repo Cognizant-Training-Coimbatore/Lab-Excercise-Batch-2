@@ -1,0 +1,205 @@
+{
+  "id": "d451a542-a75e-42c3-a1c2-abc4e6a67362",
+  "version": "2.0",
+  "name": "Exercise",
+  "url": "http://examples.codecharge.com/TaskManager/Default.php",
+  "tests": [{
+    "id": "b2c1e396-0bd0-423a-89fe-c56a3a69cdb7",
+    "name": "test1",
+    "commands": [{
+      "id": "2dddd276-b9ab-4bdc-b73d-4c2302cc42eb",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0aeb825-b0ab-4ddf-b234-4e52aecb3c49",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Google",
+      "targets": [],
+      "value": "X"
+    }, {
+      "id": "84b1d914-bd2d-438c-b1d9-c70c78cc5722",
+      "comment": "",
+      "command": "echo",
+      "target": "${X}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f753e431-c412-4d1c-90dd-316ed185b24d",
+    "name": "test2",
+    "commands": [{
+      "id": "5329c847-73dc-4d05-aa29-5e67b3d63829",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2dfb92c9-d3ef-48a4-be0d-46762b79de92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7d4bcce-c165-483c-b275-51c22ea66cb3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.TopMenuLink:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Search')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Search.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd5fd20f-a599-4344-9ad1-103b758167e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2c2f4c-e7d3-407d-9601-b2d80236a1ca",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "48649302-5db1-419c-b7b3-befccf7ccc95",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faab826d-8942-47c3-829c-5e4db31255b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "003265a0-ca57-4e8f-b33a-5f39199e7e14",
+    "name": "test3",
+    "commands": [{
+      "id": "7864f54e-9f8a-4e1c-b702-f36c6c1405ef",
+      "comment": "",
+      "command": "store",
+      "target": "Jomon George",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "c1453abe-39f2-4a64-9bcb-65529d165218",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0a2be7bf-9c4d-4361-8bdc-87e6a77cfeb3",
+    "name": "test4",
+    "commands": [{
+      "id": "cec48f4b-04ec-4077-8089-810f557e0d44",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/TaskManager/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3a59e91-59c9-4cd2-8185-a7444c50a17e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f92c271e-2d3c-4875-b922-919a80cb9d58",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Task Manager",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b7c7d02-03d6-4b4c-9f06-b5899cc5bfa3",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) img",
+      "targets": [
+        ["css=td:nth-child(2) img", "css:finder"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4fafae73-35c9-48fd-b43b-ec3aca771433",
+    "name": "test5",
+    "commands": [{
+      "id": "8582f121-dff9-4879-a04c-8603c0115721",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/TaskManager/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3035b815-a5d0-4a2b-a341-6358d9912656",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8031f006-a2d5-4b80-8166-5e94755ac708",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Task Manager123",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bffb91a4-d9d1-487f-a5df-54bd733bd8e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) img",
+      "targets": [
+        ["css=td:nth-child(2) img", "css:finder"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "08d6bc99-d5e1-4140-bec5-e476a056ca8f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/", "http://www.google.com/", "http://examples.codecharge.com/Store/Default.php", "http://examples.codecharge.com/TaskManager/Default.php"],
+  "plugins": []
+}
