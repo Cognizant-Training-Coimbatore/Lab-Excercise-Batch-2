@@ -1,0 +1,318 @@
+{
+  "id": "939b7d8f-df6a-4f38-b21f-da5cdb2c3d31",
+  "version": "2.0",
+  "name": "demo",
+  "url": "http://demowebshop.tricentis.com",
+  "tests": [{
+    "id": "dc2188c9-cbe0-4b85-b3d1-23f80565c0b1",
+    "name": "test1",
+    "commands": [{
+      "id": "07813ba5-f77e-4434-90b7-d29ca87ae797",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45bc75e4-a433-4cca-a3df-a15e7771accd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a73093e-f15d-444a-b526-99d31fc8363f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98e9f1ca-47a0-4ff9-8bd3-56778d119fca",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b062a708-8f40-44cc-ba81-36e1dfee1255",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "user1@gmail.com"
+    }, {
+      "id": "6c806bbf-2ce1-4a55-b8fa-adfc11a50238",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f7cec16-08e3-4127-a9f1-00f9bfcc5919",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": "royalnest1"
+    }, {
+      "id": "d6446951-1425-4a5f-a85f-177833efba50",
+      "comment": "",
+      "command": "click",
+      "target": "id=RememberMe",
+      "targets": [
+        ["id=RememberMe", "id"],
+        ["name=RememberMe", "name"],
+        ["css=#RememberMe", "css:finder"],
+        ["xpath=//input[@id='RememberMe']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab04c044-d7d9-4d6a-8ef1-fb160899e00c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-button",
+      "targets": [
+        ["css=.login-button", "css:finder"],
+        ["xpath=//input[@value='Log in']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f35e7ad8-4722-4bcb-a051-737b7171c4bc",
+    "name": "test2",
+    "commands": [{
+      "id": "5723d253-8466-4cb8-94bd-61804721932b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8300a7f-bcdb-4176-84d7-cafd6950a202",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e4d37d9-22df-4d02-a442-f9fcfe977f9f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c88485d7-d3ce-415f-adae-c4023c3be9c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f9c9fd3-8ee0-403c-883d-d0d272e21e9a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "user123@gmail.com"
+    }, {
+      "id": "614991bc-51d5-4aa8-a0f4-e1f5762dff0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40a0befc-ac9b-49a8-b564-59edfe18e58c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": "royalnest123"
+    }, {
+      "id": "1844a243-9d7c-449b-97da-1ed664cd3827",
+      "comment": "",
+      "command": "click",
+      "target": "id=RememberMe",
+      "targets": [
+        ["id=RememberMe", "id"],
+        ["name=RememberMe", "name"],
+        ["css=#RememberMe", "css:finder"],
+        ["xpath=//input[@id='RememberMe']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d03e2a8d-28d1-4df1-b63f-4e3376adb295",
+    "name": "test3",
+    "commands": [{
+      "id": "c3e7807c-2794-49a8-8396-61d2b54d7540",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b38a12cd-a40c-4d70-a16c-f82c818a6150",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31156a55-b2ab-4a9f-9ae1-413dcbbeb557",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Demo Web Shop1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c06e9a4a-26f6-4524-b8b8-0f7a740724b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35119e9b-27f2-43a8-bae4-4b74618462cc",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Demo Web Shop. Login",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "744a07ad-452b-4fac-88cb-16cbf35d42e4",
+    "name": "test 4",
+    "commands": [{
+      "id": "9899e060-f163-466f-9ae5-ef79a7d407f3",
+      "comment": "",
+      "command": "store",
+      "target": "10",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "b5c2dc17-d648-407c-a3a0-8aa7dbfb1da9",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "eca21541-a791-46f7-b946-94f863f0ae8e",
+    "name": "test5",
+    "commands": [{
+      "id": "e8588e84-51bc-4cfe-9ed6-84bac3d9f72e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfbe4c22-20cd-46c4-95c0-6f92db2f4b8c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7aecda3a-b828-43f6-84eb-733efd819263",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Demo Web Shop",
+      "targets": [],
+      "value": "myvariable"
+    }, {
+      "id": "6cc39ac6-c511-433f-9cc3-3158534a3b49",
+      "comment": "",
+      "command": "echo",
+      "target": "${myvariable}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c8d1e955-c92d-45ee-bad7-b7f3ee98cd68",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dc2188c9-cbe0-4b85-b3d1-23f80565c0b1"]
+  }],
+  "urls": ["http://demowebshop.tricentis.com/"],
+  "plugins": []
+}
