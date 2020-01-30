@@ -1,0 +1,116 @@
+{
+  "id": "6c6bf279-f9f6-46de-a623-8b475a3700b1",
+  "version": "2.0",
+  "name": "test2",
+  "url": "http://examples.codecharge.com/Store/Default.php",
+  "tests": [{
+    "id": "cf51b363-5e6e-4e80-bd9d-adaa529c8cdb",
+    "name": "test2",
+    "commands": [{
+      "id": "bc7ae11f-9ff6-4dc0-a7e0-1a224e2488b4",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9bd778b-f94e-4ac8-a2dd-277b81576d03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0d13dd5-e3e4-45e0-aa67-1d5cc5d13396",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acf6999c-1d64-4271-88ee-193db6d11bd3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Databases",
+      "targets": [
+        ["linkText=Databases", "linkText"],
+        ["css=.Row:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Databases')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Products.php?category_id=2')]", "xpath:href"],
+        ["xpath=//td/table[2]/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Databases')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8a787bc-8aaf-4d2d-a2c9-549a54a35bb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.TopMenuLink:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Search')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Search.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "866d6e03-8803-4b3b-8b23-7886ab0eb408",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2385130-1f4c-4852-84c9-0076868a1ae4",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "48008ef1-2807-463b-8916-a2ac890c7360",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c708f6a-663e-4c4d-8b03-74ee2397fe4b",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6d025033-e6cd-4770-ae1e-920b2c184078",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cf51b363-5e6e-4e80-bd9d-adaa529c8cdb"]
+  }],
+  "urls": ["http://examples.codecharge.com/Store/Default.php"],
+  "plugins": []
+}

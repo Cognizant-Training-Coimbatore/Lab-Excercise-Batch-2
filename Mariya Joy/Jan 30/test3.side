@@ -1,0 +1,35 @@
+{
+  "id": "9f2d3e36-1512-4021-addf-44733c5d7354",
+  "version": "2.0",
+  "name": "test3",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "c5f24034-18e9-4ebd-bdc6-78f07850ad83",
+    "name": "test3",
+    "commands": [{
+      "id": "8ee81f8f-2c47-44f8-96c2-7b3b4435165d",
+      "comment": "",
+      "command": "store",
+      "target": "Mariya",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "a61b8769-1d15-4135-9fd2-53e6b428bfaa",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "331a0026-16bc-4686-9ee9-8e08e80267fa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c5f24034-18e9-4ebd-bdc6-78f07850ad83"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
