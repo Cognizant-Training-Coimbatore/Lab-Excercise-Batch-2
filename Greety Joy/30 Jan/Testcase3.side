@@ -1,0 +1,35 @@
+{
+  "id": "76258f5b-ee45-43ea-acce-591c2267fdc3",
+  "version": "2.0",
+  "name": "Testcase3",
+  "url": "http://google.com",
+  "tests": [{
+    "id": "96d965b0-9a1a-44a7-9046-4fd8acc6d075",
+    "name": "test1",
+    "commands": [{
+      "id": "e6f0aa12-5bc2-4ea5-9b1a-222a99c61a4e",
+      "comment": "",
+      "command": "store",
+      "target": "Greety",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "65dfe6d5-06c5-4db1-a5ea-22d7b05b379d",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ab4b1161-28c5-4b76-bc39-9776981b5a63",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["96d965b0-9a1a-44a7-9046-4fd8acc6d075"]
+  }],
+  "urls": ["http://google.com/"],
+  "plugins": []
+}
