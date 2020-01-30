@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LOGIN PAGE</title>
+	<style type="text/css"></style>
+	<script type="text/javascript">
+	function checkEmail() 
+	{
+
+    	var email = document.getElementById('txtEmail');
+    	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    	if (!filter.test(email.value)) 
+      {
+    	alert('Please provide a valid email address');
+    	email.focus;
+    	return false;
+	   }
+	}
+	</script>
+</head>
+
+<body>
+	<form>
+		<table>
+			
+			<th colspan="5" ><h1>Validation</h1></th>
+			
+			<tr>
+				<td>Full name</td>
+				<td>:</td>
+				<td><input type="text" required placeholder="First Name" name=""></td>
+				<td><input type="text"  placeholder="Middle Name" name=""></td>
+				<td><input type="text"required placeholder="Last Name" name=""></td>	
+			</tr>
+			<tr>
+				<td>Mobile number</td>
+				<td>:</td>
+				<td>
+					<select>
+						<option selected>+91</option>
+					</select>
+				</td>
+				<td><input type="number" name=""></td>	
+			</tr>
+			<tr>
+				
+				<td>Email Address</td>
+				<td>:</td>
+				<td><input type='text' id='txtEmail'></td>
+
+			
+			
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>:</td>
+				<td>
+					<input type="radio" name="g">Male
+					<input type="radio" name="g">Female
+					<input type="radio" name="g">Trans
+				</td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td>:</td>
+				<td colspan="3">
+					
+					<input type="checkbox" name="">Cooking
+					<input type="checkbox" name="">Travelling
+					
+					<input type="checkbox" name="">Reading
+				
+					<input type="checkbox" name="">Badminton
+					
+					<input type="checkbox" name="">Cycling
+					<input type="checkbox" name="">Swimming
+				
+				</td>
+			</tr>
+			<tr>
+				<td>Qualifications</td>
+				<td>:</td>
+				<td>
+					<select>
+					<option>BBA</option>
+					<option>B.TECH</option>
+					<option>BSC</option>
+					<option>BA</option>
+					<option>MBBS</option>
+					<option>BDS</option>
+					<option>B.PHARM</option>
+					<option>BCA</option>
+					<option>B.VOC</option>
+					<option>B.COM</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td>:</td>
+				<td>
+					<input type="text" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td>
+					 <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one special character and number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>About</td>
+				<td>:</td>
+				<td>
+					<textarea cols="25" rows="7"></textarea>
+				</td>
+			</tr>
+				<tr>
+				<td>
+					<input type="Submit" name=""Value="Register"></td>
+
+				<td> </td>
+				<td><input type="Reset" name=""Valaue="Reset"></td>
+			</tr>
+
+			
+		</table>
+	</form>
+
+</body>
+</html>
