@@ -1,0 +1,35 @@
+{
+  "id": "f05b86c9-6ed5-449a-9366-7e6e551f439d",
+  "version": "2.0",
+  "name": "testcase3",
+  "url": "http://google.com",
+  "tests": [{
+    "id": "a21e1b41-3ad9-4e8e-a9eb-9d7a6f47ad68",
+    "name": "test1",
+    "commands": [{
+      "id": "48591954-62df-4db8-8719-f89afb600342",
+      "comment": "",
+      "command": "store",
+      "target": "Diya",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "95e23bfe-3163-463c-926b-ed3a6904c1aa",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "082d9324-5b71-4c1f-bcfb-10cf08b6b95b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://google.com/"],
+  "plugins": []
+}

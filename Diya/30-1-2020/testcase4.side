@@ -1,0 +1,136 @@
+{
+  "id": "972be89b-64ee-43f4-a871-89112b3b10fc",
+  "version": "2.0",
+  "name": "testcase4",
+  "url": "http://examples.codecharge.com",
+  "tests": [{
+    "id": "2f451b9d-8b9a-4abd-83fd-30a5b9c611e7",
+    "name": "test1",
+    "commands": [{
+      "id": "8730a5e9-9100-4a5d-80b6-dc3e8f0c88be",
+      "comment": "",
+      "command": "open",
+      "target": "/TaskManager/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94093c70-84f1-4b3f-986c-8dcc7cfab634",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe74d5bf-d9a0-4092-b60c-4e83845b1a78",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) > a > img",
+      "targets": [
+        ["css=td:nth-child(3) > a > img", "css:finder"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fb15a11-9bb1-411a-8233-85cf71105ab8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.php?Logout=True')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25e4200e-efe2-4fb2-9f16-bdccc8253557",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a26c00e-6cd4-44e0-a104-31507e78bdbb",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) img",
+      "targets": [
+        ["css=td:nth-child(2) img", "css:finder"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "369410ab-6725-4977-bbc9-0dadd4e18ad6",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.Controls:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3324e6de-73dc-41ee-ab98-07ee0c347b0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.Controls:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "ff5600a9-d73b-4d1d-a178-4c7970ae584a",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05178378-9ea7-413d-87b9-e10d5c1f4bd4",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "c4dc6b1b-87e0-488d-8131-5bf1e217ebd7",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoLogin",
+      "targets": [
+        ["name=DoLogin", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoLogin']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9da101ce-a120-4b04-a39d-4640e16e332d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2f451b9d-8b9a-4abd-83fd-30a5b9c611e7"]
+  }],
+  "urls": ["http://examples.codecharge.com/"],
+  "plugins": []
+}
