@@ -1,0 +1,67 @@
+{
+  "id": "66931249-126d-4c6a-a794-2c14e9a09136",
+  "version": "2.0",
+  "name": "TestCase1",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "bd9d6076-ff93-4645-bf69-4fc3059f2e60",
+    "name": "testcase1",
+    "commands": [{
+      "id": "dd56cc80-3453-40c8-aa13-3fb675d1cd81",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f4aaedf-9afb-4456-adb1-90936fdf4973",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6ebbc3d-d54a-4472-ba4d-09fd38f2c7f5",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Google",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "42d902bf-9740-4d20-bd79-c026c8382afa",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "106d1bec-3d55-4d28-a16d-8f81ec1227d5",
+    "name": "testcase3",
+    "commands": [{
+      "id": "6df57050-fc0c-468e-847a-c841614f4eb7",
+      "comment": "",
+      "command": "store",
+      "target": "Jishnu",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "cf651254-16c8-4039-9d56-2f7c5c591f16",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c89affeb-2be0-4a37-a41b-bd8f8281fd3e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bd9d6076-ff93-4645-bf69-4fc3059f2e60"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

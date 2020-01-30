@@ -1,0 +1,78 @@
+{
+  "id": "4107d54c-6d8a-48c3-8736-0b85d354aa0b",
+  "version": "2.0",
+  "name": "testcase2",
+  "url": "http://examples.codecharge.com/Store/Default.php",
+  "tests": [{
+    "id": "ff5cb2f4-5a6e-4cda-831d-0a040175dada",
+    "name": "testcase2",
+    "commands": [{
+      "id": "dcf85557-4c33-44b1-9059-3f8dec27c88a",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a5a6c92-3a04-4656-93ac-895047bfd007",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0196e4f7-8185-43ed-8fdb-6e06dd9dcab0",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9724f09e-0016-42f9-b1c0-ad68654f7f71",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "3b615878-55ea-400b-a93a-6d0c045cf5ed",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfdf6c07-b7af-45dd-ba87-23d246b94a79",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=.Bottom input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "65001780-ea13-4392-a01e-cdc7a5d52e13",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ff5cb2f4-5a6e-4cda-831d-0a040175dada"]
+  }],
+  "urls": ["http://examples.codecharge.com/Store/Default.php"],
+  "plugins": []
+}
