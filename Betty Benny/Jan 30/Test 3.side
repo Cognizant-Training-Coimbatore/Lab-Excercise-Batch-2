@@ -1,0 +1,35 @@
+{
+  "id": "689a456f-b25a-47ab-a4e6-3e84dcf1ba58",
+  "version": "2.0",
+  "name": "Test 3",
+  "url": "http://www.google.com",
+  "tests": [{
+    "id": "8fde337f-b1dc-4bed-a133-4b8c451e69b1",
+    "name": "Test 3",
+    "commands": [{
+      "id": "08611a9a-a818-4acd-9f2e-dcd729411be3",
+      "comment": "",
+      "command": "store",
+      "target": "Betty",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "43ec53a2-5ad8-4711-839d-58f23aa9d4fa",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b37e9cf7-a4c7-4a00-8844-39a780a84e74",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fde337f-b1dc-4bed-a133-4b8c451e69b1"]
+  }],
+  "urls": ["http://www.google.com/"],
+  "plugins": []
+}
