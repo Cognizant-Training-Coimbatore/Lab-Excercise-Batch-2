@@ -1,0 +1,39 @@
+{
+  "id": "52546ada-0917-49f2-b0f6-8a2df20bcf18",
+  "version": "2.0",
+  "name": "ex3",
+  "url": "https://examples.codeCharge.com/Store/Default.php",
+  "tests": [{
+    "id": "40d6dec5-edc7-4eae-a57c-579acd860843",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "d0c9cc00-5568-4a72-8763-a0258430297b",
+    "name": "test3",
+    "commands": [{
+      "id": "6d9ea923-4424-4fe7-b295-20ef7a65add0",
+      "comment": "",
+      "command": "store",
+      "target": "nikhila",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "6c733638-5f54-45b4-bb16-1c47e1113f5b",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fd6de49e-3f35-4284-b375-31a94df5ed0e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["40d6dec5-edc7-4eae-a57c-579acd860843"]
+  }],
+  "urls": ["https://examples.codecharge.com/Store/Default.php"],
+  "plugins": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "d372798a-7cca-4c2d-a68d-37502e328a73",
+  "version": "2.0",
+  "name": "excercise1",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "7f5bd356-b137-4d48-863c-a6b6639dcac7",
+    "name": "test1",
+    "commands": [{
+      "id": "e5f6d4bf-7139-46a4-a186-287f96f71522",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ff63d9f-1728-493b-9d6a-9d154235cc65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "893f9d05-363b-4709-8153-6e854681c3b4",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Google",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "a27a346a-61be-4751-b22c-cdec31e8d836",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "79da4e3b-9c2e-45e1-b3a8-cc79fdf9a2f2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
