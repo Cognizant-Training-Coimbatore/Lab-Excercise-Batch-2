@@ -1,0 +1,312 @@
+{
+  "id": "c6068217-8a31-46ba-a944-5c66c65b6b55",
+  "version": "2.0",
+  "name": "PARVATHY PADMANABHAN jan30 example",
+  "url": "http://examples.codecharge.com/TaskManager/Default.php",
+  "tests": [{
+    "id": "a41fd7e2-9708-4295-8752-b0d48c74497f",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "ea186035-984d-4373-847f-fbf5afc68501",
+    "name": "testcase1",
+    "commands": [{
+      "id": "4ca31af7-5356-4644-838b-009b52760ee7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "221ee0db-2cea-40e4-9665-3ef5dce69fa2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "679x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "240683ea-593c-4fd7-a9bb-b59f6bf6f1dd",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Google",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "00fa82b5-c160-4f01-8373-37880d4d9e96",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b1cf0ba1-25e3-4492-9311-d5d491520f14",
+    "name": "testcase2",
+    "commands": [{
+      "id": "e8378f12-f1a7-48d1-9274-19ea6c559af3",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed138afc-80c5-468b-ab32-b87546bc46d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "679x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f26cb0dc-da30-4b64-819e-2e400b401083",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d152608-c6d6-4697-88db-ade8822834a4",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "776851aa-aaf2-4d4a-8545-9a6e7c0393b7",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d676fcf8-2608-481b-a225-5fe487301193",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=.Bottom input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c6f586ae-5251-4c92-a01b-4bdd90de5295",
+    "name": "testcase3",
+    "commands": [{
+      "id": "0cb7e2d9-6bb4-4247-96ab-bd98b9bc4c1e",
+      "comment": "",
+      "command": "store",
+      "target": "Parvathy",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "23921178-57eb-4588-aab0-b7afbf6d9f4a",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6f92083c-a40a-4bd8-a366-ded812443d04",
+    "name": "testcase4",
+    "commands": [{
+      "id": "330bc652-6f56-4879-86dd-dd8783b83b3c",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/TaskManager/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa6179be-eefd-4994-aa42-041d49c68ae4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "679x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e7f0245-e063-42b2-b6e9-6d87cd05807c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Task Manager",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fad3e291-2b9c-4d41-9514-dd963b491b29",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) img",
+      "targets": [
+        ["css=td:nth-child(2) img", "css:finder"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53f21c9e-3d17-4193-a168-845bb1edba54",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) > a > img",
+      "targets": [
+        ["css=td:nth-child(3) > a > img", "css:finder"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64566e9a-cf98-40d9-96a5-8a5db297970a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.php?Logout=True')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea6f414-886b-4c68-8706-edbe705344dd",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.Controls:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "9347e6f1-e8fc-4f25-9b3f-2000fb5e6616",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "50a6d93e-7d0e-4e8f-ba94-05e454578e35",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoLogin",
+      "targets": [
+        ["name=DoLogin", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoLogin']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "58270e01-6ce3-4669-97be-9a8385da1ecf",
+    "name": "testcase5",
+    "commands": [{
+      "id": "2a7fe04b-98ae-45e4-8ce8-5096d0a1dde4",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/TaskManager/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c4c38b5-fe7e-40f0-abbb-299a27bfe4a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "679x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61e9fd51-f1f8-4749-b06e-b422fd4e766f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Task Manager123",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b78c0572-c3a4-4029-b340-97f54080ddf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) > a > img",
+      "targets": [
+        ["css=td:nth-child(3) > a > img", "css:finder"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10af43db-d15b-401a-acfa-893b082643ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.php?Logout=True')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d3457cb-6fb2-4c9b-80a5-1a01a5e48b16",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.Controls:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "239ab6c9-34ba-4012-90ed-9c0b6bc350d6",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "7de2bc7f-df43-44c4-a066-39b3140f4575",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoLogin",
+      "targets": [
+        ["name=DoLogin", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoLogin']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "67b69a88-afb0-4fe7-9d63-271feef7dbf7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a41fd7e2-9708-4295-8752-b0d48c74497f"]
+  }],
+  "urls": ["https://www.google.com/", "http://examples.codecharge.com/Store/Default.php", "http://examples.codecharge.com/TaskManager/Default.php"],
+  "plugins": []
+}
