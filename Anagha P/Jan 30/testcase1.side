@@ -1,0 +1,53 @@
+{
+  "id": "89b2f977-e9ee-455e-aff9-4024e930c102",
+  "version": "2.0",
+  "name": "testcase1",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "e940405d-40a5-4d87-8bb4-aeb70c6f6af8",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "57b100a4-05d1-4a52-a946-ff03606061c4",
+    "name": "test1",
+    "commands": [{
+      "id": "28685fd9-1a9e-4897-9dc2-07fdaeb2019b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e89680e1-d449-49bb-9bcc-1fdcd3e492df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55b5f5e8-704e-4d72-a2f1-8e48ccb6589b",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Google",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "1794c1e8-2415-4f59-b3b7-2322f24010f8",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "63a30aa6-7a1b-4850-bf51-07f4b548ce77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e940405d-40a5-4d87-8bb4-aeb70c6f6af8"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
