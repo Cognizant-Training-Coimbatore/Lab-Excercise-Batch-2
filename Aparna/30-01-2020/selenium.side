@@ -1,0 +1,139 @@
+{
+  "id": "bbe69433-acbc-49ab-a81d-4e892001a2ca",
+  "version": "2.0",
+  "name": "demo",
+  "url": "http://examples.codecharge.com/Store/Default.php",
+  "tests": [{
+    "id": "38b8a3a5-a09c-448a-a704-872473c51cfe",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "3f459517-5aca-406f-a6a2-9c51c20fc952",
+    "name": "teatcase1",
+    "commands": [{
+      "id": "5af1db60-6185-4713-ba17-400e74319d8c",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Google",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "8894fc92-cfca-475c-8b16-e8a3a23f4936",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "63e122e8-52f3-4f49-bdeb-c5027d715376",
+    "name": "testcase2",
+    "commands": [{
+      "id": "118c6288-5585-439f-84d9-c9370d4323b1",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f848a424-f047-4872-8b65-272ae5fab673",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d724bfb-ab26-4599-8cbb-7cda4c646874",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "826df350-3c9a-4a78-b134-7d6469bcc51b",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "4c51731a-a7ac-4f81-8886-51c6a43f9c82",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2939edc2-6f93-4478-9da6-a835deaf9470",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=.Bottom input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a5ca3676-7bfc-4fa7-a884-e0552fecea6d",
+    "name": "testcase3",
+    "commands": [{
+      "id": "c54d98f7-ae89-4bc4-b4e7-9556b83c9964",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a3a89a7-09c3-4adf-8d3f-5fcc55ce9935",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57b937ca-7671-4089-913f-41d35e0977bb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6ca5ca0-2ce0-4df5-a276-6bb82f4a63aa",
+      "comment": "",
+      "command": "store",
+      "target": "aparna",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "83590048-2aa4-4e59-9ebb-5a620b0f046c",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "12037987-d133-4057-a088-5e2ac30c6df6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38b8a3a5-a09c-448a-a704-872473c51cfe"]
+  }],
+  "urls": ["http://google.com/", "http://examples.codecharge.com/Store/Default.php"],
+  "plugins": []
+}

@@ -1,0 +1,18 @@
+package webdriverdemo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class pgm1_launch_browser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.setProperty("webdriver.chrome.driver", "chromedriver.exe"); //which browser to use
+WebDriver driver=new ChromeDriver();     
+driver.get("http://demowebshop.tricentis.com");  //open webpage
+String s=driver.getTitle();
+System.out.println(s);
+driver.quit();
+	}
+
+}
