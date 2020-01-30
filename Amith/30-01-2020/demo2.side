@@ -1,0 +1,164 @@
+{
+  "id": "4b0644ca-0846-4820-84f5-4cf045887d56",
+  "version": "2.0",
+  "name": "demo2",
+  "url": "https://google.co.in",
+  "tests": [{
+    "id": "8df415ec-63b6-4331-bf1c-5612630a22f0",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "720f7f2f-c384-4e6b-b97a-9edf7710a63f",
+    "name": "test1",
+    "commands": [{
+      "id": "2304d733-f0a5-4a9f-8d21-f8b194bd1b83",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.co.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d67e6992-1d92-44ec-8b00-4fc401c7ab7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e99ffda-1e0a-4c03-a423-e00a22b82ed2",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Google",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "7e4e2a12-91cc-4964-a10d-8c9ef01dcbc0",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a193fa64-b30b-4ac1-bca5-77b0df4dd7d5",
+    "name": "test2",
+    "commands": [{
+      "id": "f7590bd2-c612-41cf-bd15-44e2f3e1a468",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.co.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79c67773-67ca-4e9f-9256-80ab334aac00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e0c8b1-0b80-4474-9685-0bcb68a6fbfd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "ff8d17a2-2dbf-4e89-bfb4-03fadba2cc01",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "examples.codecharge.com/Store/Default.php"
+    }, {
+      "id": "be98028e-8a3a-4c51-9d51-e1ccd841916a",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .gNO89b",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div[3]/center/input", "xpath:idRelative"],
+        ["xpath=//div[3]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e77abea-089c-46ed-90e9-d38e6bc17178",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g:nth-child(1) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Online Bookstore - CodeCharge Studio Demos and Examples')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c397246-cc1c-413e-90db-c91533dcbfea",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a7adcd2-83e1-4988-a07a-36d670f3178a",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "f5022200-0a7f-42e8-aedf-3ef6a45cc7b7",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1e06472-b2c9-4430-b8ee-739be3f6a606",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=.Bottom input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1a489449-8889-4d01-8b73-64ccc5916944",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8df415ec-63b6-4331-bf1c-5612630a22f0"]
+  }],
+  "urls": ["https://google.co.in/"],
+  "plugins": []
+}
