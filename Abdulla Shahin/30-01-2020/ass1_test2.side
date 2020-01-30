@@ -1,0 +1,96 @@
+{
+  "id": "e5e16d4b-172f-44bb-974f-724556e2c723",
+  "version": "2.0",
+  "name": "ass1_test2",
+  "url": "http://examples.codecharge.com",
+  "tests": [{
+    "id": "494c12fa-5819-4050-91d5-a2ab2a5c566b",
+    "name": "test2",
+    "commands": [{
+      "id": "2647519b-c4fd-4a56-8c3b-bf51c618aa72",
+      "comment": "",
+      "command": "open",
+      "target": "/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17edf10b-b8b7-4d86-941c-f24b8290d034",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x664",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d9ab8db-4be8-4511-a693-2682eab207a3",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f62322ff-5943-4f78-acb8-03dd6f727b89",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "e9fd8c86-e3fb-4bd4-beb7-f28a5a0ea21a",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "278a2252-5eef-403c-9213-f31cd47a3017",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=.Bottom input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "00553509-e4c9-463d-be4b-cec84ec34023",
+    "name": "test3",
+    "commands": [{
+      "id": "b57a9be0-719f-403f-83f3-b0bcffdc06f2",
+      "comment": "",
+      "command": "store",
+      "target": "shaheen",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "988a9a1e-4ed5-4912-b231-adfefb65a5f8",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "11836669-bbd7-41c7-8998-496b2ecc447d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["494c12fa-5819-4050-91d5-a2ab2a5c566b"]
+  }],
+  "urls": ["http://examples.codecharge.com/"],
+  "plugins": []
+}
