@@ -1,0 +1,385 @@
+{
+  "id": "a8a0cebc-a0d9-412a-b2ae-6aa1a454b7f1",
+  "version": "2.0",
+  "name": "demo4",
+  "url": "http://examples.codecharge.com/TaskManager/Default.php",
+  "tests": [{
+    "id": "05416aa4-baf9-4dcd-984d-79eb38f53e7c",
+    "name": "test4",
+    "commands": [{
+      "id": "0dddc770-c198-4c52-b1b0-4834dc4033ed",
+      "comment": "",
+      "command": "open",
+      "target": "/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "865ecad8-9b97-4b24-a9ab-b2050e6f4e22",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f6c254a-303f-4e46-b57f-e10245a340be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.TopMenuLink:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Search')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Search.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c65f78-a7d4-4328-b073-e6adbc825f79",
+      "comment": "",
+      "command": "click",
+      "target": "name=productsPageSize",
+      "targets": [
+        ["name=productsPageSize", "name"],
+        ["css=.Controls:nth-child(6) select", "css:finder"],
+        ["xpath=//select[@name='productsPageSize']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71279902-9141-45b0-bc1e-f6111c016c13",
+      "comment": "",
+      "command": "click",
+      "target": "name=price_to",
+      "targets": [
+        ["name=price_to", "name"],
+        ["css=.Controls:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='price_to']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3842a857-fe46-46c1-8013-f0f824e757c5",
+      "comment": "",
+      "command": "click",
+      "target": "name=productsOrder",
+      "targets": [
+        ["name=productsOrder", "name"],
+        ["css=.Controls:nth-child(5) select:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='productsOrder']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9686433-1773-495f-a480-267c41bba9c3",
+      "comment": "",
+      "command": "click",
+      "target": "name=s_keyword",
+      "targets": [
+        ["name=s_keyword", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='s_keyword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c065496-f5e7-46d9-9479-b07d30d673b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2cc71a6-0624-4feb-9659-a7e58a28fc36",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "edd169af-6a7a-4efe-a710-6840a317ee91",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8611f385-1998-4b87-bb0f-c36bce564f7e",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "34f1eaca-bab6-4ccf-a23c-e38e3808acd1",
+    "name": "test5",
+    "commands": [{
+      "id": "57908171-9c0a-4998-b016-e2f087ff8693",
+      "comment": "",
+      "command": "store",
+      "target": "stani",
+      "targets": [],
+      "value": "myname"
+    }, {
+      "id": "67ac7df8-ab4f-4191-8bfc-e9193e58fa88",
+      "comment": "",
+      "command": "echo",
+      "target": "${myname}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd70ccb9-891d-4002-a168-76c28ce8ff4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'Preparing to run your test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "548329cd-ccaf-4694-a4d5-00ecced55b87",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "13a522bd-fc30-4f69-8663-fcad6fcf20ea",
+    "name": "test6",
+    "commands": [{
+      "id": "47b5860c-2432-4705-9090-809721afb412",
+      "comment": "",
+      "command": "open",
+      "target": "http://examples.codecharge.com/TaskManager/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bbe359a-52bb-4861-8b23-55576eccf870",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18abd245-9200-44c3-a422-d7d0d34642d6",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Task Manager",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8197322a-c570-4cc2-a34e-3084a2b1f1c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ef82cbc-d1c2-4f02-b9c9-70c4481dff71",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb894844-877d-4b14-a423-1cb0b864128e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) img",
+      "targets": [
+        ["css=td:nth-child(2) img", "css:finder"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4323a995-bac6-4cdc-bc2f-1c130166ebb9",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.Controls:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "58d6bca6-d24d-4779-81bb-efb2728ace7d",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3c8e241-ff1f-437c-813a-9da18ff4f496",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "47b7ee72-2635-42d2-b053-7fd6033aa351",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoLogin",
+      "targets": [
+        ["name=DoLogin", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoLogin']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b40ff92b-bf39-456b-bc86-e951b84c75cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) > a:nth-child(1) > img",
+      "targets": [
+        ["css=td:nth-child(2) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "447b10b2-fe61-4313-9af6-f6d0a1b9846e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) > a > img",
+      "targets": [
+        ["css=td:nth-child(3) > a > img", "css:finder"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2ea5a4c-b217-4fa0-b329-b8327d3432e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.php?Logout=True')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14cef2e7-6409-492e-aa0a-b336a92c7721",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1133b300-9d2e-47ca-b38c-c3b67771a5f9",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Task Manager",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b56c320-e9e1-4b07-8bba-d302cf87c14f",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) img",
+      "targets": [
+        ["css=td:nth-child(2) img", "css:finder"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bafa405e-52ad-4c1b-8a33-d97d71fc55d7",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.Controls:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "75176253-3343-40e7-a8b4-2a982ab89dcc",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5e88a9d-90d1-4c09-b6ca-1de5896aca58",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "812661d7-bb8e-4a15-abb5-d3b88b6adb20",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoLogin",
+      "targets": [
+        ["name=DoLogin", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoLogin']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6690a90d-9bd0-4935-99c3-6d7cd0b23d21",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["05416aa4-baf9-4dcd-984d-79eb38f53e7c"]
+  }],
+  "urls": ["http://examples.codecharge.com/", "http://examples.codecharge.com/TaskManager/Default.php"],
+  "plugins": []
+}

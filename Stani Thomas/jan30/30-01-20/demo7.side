@@ -1,0 +1,49 @@
+{
+  "id": "0e77ab16-57b8-450a-b33d-da7c02b1434d",
+  "version": "2.0",
+  "name": "demo7",
+  "url": "http://examples.codecharge.com",
+  "tests": [{
+    "id": "4ebdcb4e-d2e9-472e-a6aa-8fd8332917fe",
+    "name": "test7",
+    "commands": [{
+      "id": "503bb7e4-c92d-486d-91d4-0dc262d2d125",
+      "comment": "",
+      "command": "open",
+      "target": "/TaskManager/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05978c96-e6b0-4ce3-8f03-0013313d0924",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d712f5dc-3f88-470c-9b7c-aa2bf87237c0",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Task Manager",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcaf4f39-98ea-4ff7-8efe-497cbb6af205",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Task Manager123",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "463a0a96-99ed-4e6b-92d8-3e1557e6e8f1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4ebdcb4e-d2e9-472e-a6aa-8fd8332917fe"]
+  }],
+  "urls": ["http://examples.codecharge.com/"],
+  "plugins": []
+}

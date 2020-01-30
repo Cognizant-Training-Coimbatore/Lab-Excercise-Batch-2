@@ -1,0 +1,140 @@
+{
+  "id": "a8a0cebc-a0d9-412a-b2ae-6aa1a454b7f1",
+  "version": "2.0",
+  "name": "demo4",
+  "url": "http://examples.codecharge.com",
+  "tests": [{
+    "id": "05416aa4-baf9-4dcd-984d-79eb38f53e7c",
+    "name": "test4",
+    "commands": [{
+      "id": "0dddc770-c198-4c52-b1b0-4834dc4033ed",
+      "comment": "",
+      "command": "open",
+      "target": "/Store/Default.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "865ecad8-9b97-4b24-a9ab-b2050e6f4e22",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f6c254a-303f-4e46-b57f-e10245a340be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.TopMenuLink:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Search')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Search.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c65f78-a7d4-4328-b073-e6adbc825f79",
+      "comment": "",
+      "command": "click",
+      "target": "name=productsPageSize",
+      "targets": [
+        ["name=productsPageSize", "name"],
+        ["css=.Controls:nth-child(6) select", "css:finder"],
+        ["xpath=//select[@name='productsPageSize']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71279902-9141-45b0-bc1e-f6111c016c13",
+      "comment": "",
+      "command": "click",
+      "target": "name=price_to",
+      "targets": [
+        ["name=price_to", "name"],
+        ["css=.Controls:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='price_to']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3842a857-fe46-46c1-8013-f0f824e757c5",
+      "comment": "",
+      "command": "click",
+      "target": "name=productsOrder",
+      "targets": [
+        ["name=productsOrder", "name"],
+        ["css=.Controls:nth-child(5) select:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='productsOrder']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9686433-1773-495f-a480-267c41bba9c3",
+      "comment": "",
+      "command": "click",
+      "target": "name=s_keyword",
+      "targets": [
+        ["name=s_keyword", "name"],
+        ["css=.Controls:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='s_keyword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c065496-f5e7-46d9-9479-b07d30d673b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2cc71a6-0624-4feb-9659-a7e58a28fc36",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_id",
+      "targets": [],
+      "value": "label=Databases"
+    }, {
+      "id": "edd169af-6a7a-4efe-a710-6840a317ee91",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_id",
+      "targets": [
+        ["name=category_id", "name"],
+        ["css=.Controls:nth-child(1) select", "css:finder"],
+        ["xpath=//select[@name='category_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8611f385-1998-4b87-bb0f-c36bce564f7e",
+      "comment": "",
+      "command": "click",
+      "target": "name=DoSearch",
+      "targets": [
+        ["name=DoSearch", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='DoSearch']", "xpath:attributes"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6690a90d-9bd0-4935-99c3-6d7cd0b23d21",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["05416aa4-baf9-4dcd-984d-79eb38f53e7c"]
+  }],
+  "urls": ["http://examples.codecharge.com/"],
+  "plugins": []
+}
