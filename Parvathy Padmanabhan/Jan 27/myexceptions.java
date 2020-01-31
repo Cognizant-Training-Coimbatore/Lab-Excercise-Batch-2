@@ -1,4 +1,6 @@
 
-public class myexceptions {
-
+public class myexceptions extends Exception {
+myexceptions(String s)
+{super(s);
+	}
 }
