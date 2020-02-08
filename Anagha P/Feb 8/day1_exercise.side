@@ -1,0 +1,233 @@
+{
+  "id": "932de7d9-ffe0-42d0-8fb6-c44f88ae4afe",
+  "version": "2.0",
+  "name": "day1_exercise",
+  "url": "http://demowebshop.tricentis.com",
+  "tests": [{
+    "id": "098159dd-ae23-4f07-80db-74e4aa5254e9",
+    "name": "test1",
+    "commands": [{
+      "id": "e9aedc7d-5ded-4bd1-b691-e5821b57c738",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5c33f10-85e2-44c5-835c-842ed80e4917",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b7395a3-4f09-4d50-831e-9de28ffd4c2e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=.ico-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1aabe88-0d4d-415e-b7e4-7b8988814707",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=.ico-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5db964d-591b-4a73-9c90-1fa1b2491edc",
+      "comment": "",
+      "command": "click",
+      "target": "id=gender-male",
+      "targets": [
+        ["id=gender-male", "id"],
+        ["name=Gender", "name"],
+        ["css=#gender-male", "css:finder"],
+        ["xpath=//input[@id='gender-male']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bec9a48d-1488-40b3-851e-3c4e2339c0ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=FirstName",
+      "targets": [
+        ["id=FirstName", "id"],
+        ["name=FirstName", "name"],
+        ["css=#FirstName", "css:finder"],
+        ["xpath=//input[@id='FirstName']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5e40225-0866-4e07-8fd3-0e1f9f68c289",
+      "comment": "",
+      "command": "type",
+      "target": "id=FirstName",
+      "targets": [
+        ["id=FirstName", "id"],
+        ["name=FirstName", "name"],
+        ["css=#FirstName", "css:finder"],
+        ["xpath=//input[@id='FirstName']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "aryan"
+    }, {
+      "id": "0d5f6e85-bf5b-4a1d-aba7-adfffae90c39",
+      "comment": "",
+      "command": "click",
+      "target": "id=LastName",
+      "targets": [
+        ["id=LastName", "id"],
+        ["name=LastName", "name"],
+        ["css=#LastName", "css:finder"],
+        ["xpath=//input[@id='LastName']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "927eb554-1ef4-4bd4-94a8-71868af93fa7",
+      "comment": "",
+      "command": "type",
+      "target": "id=LastName",
+      "targets": [
+        ["id=LastName", "id"],
+        ["name=LastName", "name"],
+        ["css=#LastName", "css:finder"],
+        ["xpath=//input[@id='LastName']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "p"
+    }, {
+      "id": "b664b56d-3afb-413c-bb0b-2da77d8f46c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6040c843-d105-45fb-bee2-b27f32dfcf3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "aryan123@gmail.com"
+    }, {
+      "id": "deb76016-3ee0-46db-91e6-bcd42f58d107",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b59b816c-48de-4d09-bb63-361d64f91d29",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "pass123$"
+    }, {
+      "id": "d9f4bfd5-54da-46e9-a606-1ff0f9ce5036",
+      "comment": "",
+      "command": "click",
+      "target": "id=ConfirmPassword",
+      "targets": [
+        ["id=ConfirmPassword", "id"],
+        ["name=ConfirmPassword", "name"],
+        ["css=#ConfirmPassword", "css:finder"],
+        ["xpath=//input[@id='ConfirmPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c2c3748-850a-463d-85f9-17a537b7531f",
+      "comment": "",
+      "command": "type",
+      "target": "id=ConfirmPassword",
+      "targets": [
+        ["id=ConfirmPassword", "id"],
+        ["name=ConfirmPassword", "name"],
+        ["css=#ConfirmPassword", "css:finder"],
+        ["xpath=//input[@id='ConfirmPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "pass123$"
+    }, {
+      "id": "bc96c7f8-07b5-4968-a449-51f336b4a533",
+      "comment": "",
+      "command": "click",
+      "target": "id=register-button",
+      "targets": [
+        ["id=register-button", "id"],
+        ["name=register-button", "name"],
+        ["css=#register-button", "css:finder"],
+        ["xpath=//input[@id='register-button']", "xpath:attributes"],
+        ["xpath=//form/div/div[2]/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2e8ecdc-a04c-4fef-bc4b-61c2866b279a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.ico-logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "70b96734-e225-4108-8a99-70d9268d995b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["098159dd-ae23-4f07-80db-74e4aa5254e9"]
+  }],
+  "urls": ["http://demowebshop.tricentis.com/"],
+  "plugins": []
+}

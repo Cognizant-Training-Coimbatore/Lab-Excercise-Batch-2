@@ -1,0 +1,113 @@
+{
+  "id": "3a379454-e43d-4e82-87fc-980ec6bb8e7f",
+  "version": "2.0",
+  "name": "day1_exercise2",
+  "url": "http://demowebshop.tricentis.com",
+  "tests": [{
+    "id": "f486b8c9-936f-4779-9edb-210abe9f7e1c",
+    "name": "test2",
+    "commands": [{
+      "id": "04ddc47c-01f7-454d-878d-3ad7b3bdadb2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97173dcf-6033-462b-bf07-598c2510a5c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05470e3c-89d0-4b06-9284-09a39ce8d484",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6001a1d1-3a0a-44c8-8c90-ec2d4ef1d690",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "aryan123@gmail.com"
+    }, {
+      "id": "63605ccb-c1e6-465a-a880-780f3cc33cf0",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "632fc1e5-a6b9-4899-bedc-edf06f1377a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": "pass123$"
+    }, {
+      "id": "c7801d47-6ab0-45f6-b2ec-0cdb2e1775c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-button",
+      "targets": [
+        ["css=.login-button", "css:finder"],
+        ["xpath=//input[@value='Log in']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17af8393-dfd1-4691-9307-328fdaa26159",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.ico-logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8db8ec8a-db8e-490b-b6a5-e2cb675130dc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f486b8c9-936f-4779-9edb-210abe9f7e1c"]
+  }],
+  "urls": ["http://demowebshop.tricentis.com/"],
+  "plugins": []
+}

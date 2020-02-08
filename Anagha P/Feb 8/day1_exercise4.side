@@ -1,0 +1,63 @@
+{
+  "id": "578a42a2-9355-466a-a494-418e51e723a2",
+  "version": "2.0",
+  "name": "day1_exercise4",
+  "url": "http://demowebshop.tricentis.com",
+  "tests": [{
+    "id": "50805276-8546-48c7-b565-ee492f25c36b",
+    "name": "test5",
+    "commands": [{
+      "id": "408c96c7-a7ee-40b4-989b-47573e950cfb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd09f2b2-865f-4da6-9df6-13c15831586e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b049db92-a1f6-4cd9-ad24-66c6a0e4c86b",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Demo Web Shop1224",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "208ef886-5f55-4a93-87e1-bf3f91432129",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Demo Web Shop1224",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce17e080-eabf-4319-94a2-d417dbd0ae35",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=.ico-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "289c744d-25fd-44bb-be88-013ad9d9ef88",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["50805276-8546-48c7-b565-ee492f25c36b"]
+  }],
+  "urls": ["http://demowebshop.tricentis.com/"],
+  "plugins": []
+}

@@ -1,0 +1,110 @@
+{
+  "id": "1e28623b-d2da-414a-ad63-35289d51e6c1",
+  "version": "2.0",
+  "name": "day1_exercise3",
+  "url": "http://demowebshop.tricentis.com",
+  "tests": [{
+    "id": "fc6233e5-701a-4356-badf-a5d565d8c9b3",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "59815ca9-7ae1-4d8a-b427-44ef8425a1c7",
+    "name": "test4",
+    "commands": [{
+      "id": "587f4be5-0b0f-41ea-a837-d4672127662b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "400f1f2e-3fb6-4305-983d-63176c27d3b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf3b5cab-3cb1-4a4b-ba4b-ec72f0b4bb86",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Demo Web Shop",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "72303b69-16cd-4d5f-af79-201ef52b0323",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nivo-imageLink",
+      "targets": [
+        ["css=.nivo-imageLink", "css:finder"],
+        ["xpath=//div[@id='nivo-slider']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demowebshop.tricentis.com/desktop-pc-with-cdrw']", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3251fecd-5799-473a-b703-7bd061b28472",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=.ico-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d61b767f-2d56-42e3-adeb-615529255865",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=.ico-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a91efc1-715b-4755-aea4-91d842cde32f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Demo Web Shop. Register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6127e2f1-3fd4-4c1d-a0ec-7c050a83945a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.page",
+      "targets": [
+        ["css=.page", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "Register\\nYour Personal Details\\nGender: Male Female\\nFirst name: *\\nLast name: *\\nEmail: *\\nYour Password\\nPassword: *\\nConfirm password: *"
+    }, {
+      "id": "71f27ae1-f182-461f-b57e-89b7a916c434",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9f2861e5-a71e-4655-8ea5-769571701338",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fc6233e5-701a-4356-badf-a5d565d8c9b3"]
+  }],
+  "urls": ["http://demowebshop.tricentis.com/"],
+  "plugins": []
+}
