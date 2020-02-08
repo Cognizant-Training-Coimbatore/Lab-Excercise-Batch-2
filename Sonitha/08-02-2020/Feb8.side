@@ -1,0 +1,21 @@
+{
+  "id": "34958b4a-c407-46c8-a55b-c73a3dc48465",
+  "version": "2.0",
+  "name": "Feb8",
+  "url": "http://demowebshop.tricentis.com",
+  "tests": [{
+    "id": "0d68ff0a-8290-4bba-abce-b5ceec701a7f",
+    "name": "test1",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "0edf2145-d6c6-4185-951d-14476907da3a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://demowebshop.tricentis.com/"],
+  "plugins": []
+}
