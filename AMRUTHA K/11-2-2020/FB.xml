@@ -1,0 +1,12 @@
+<fb>
+<url>https://www.facebook.com/</url>
+<uid>email</uid>
+<pwd>pass</pwd>
+<pwdv>amama</pwdv>
+<uidv>amruthmuralirk</uidv>
+<butn>//*[@id="login_form"]/table/tbody/tr[2]/td[3]
+</butn>
+
+
+
+</fb>
