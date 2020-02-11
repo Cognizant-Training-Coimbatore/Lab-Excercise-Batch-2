@@ -1,0 +1,4 @@
+Launch the chrome browser
+open the url "https://www.selenium.dev/"
+wait 5 seconds
+Close the browser
