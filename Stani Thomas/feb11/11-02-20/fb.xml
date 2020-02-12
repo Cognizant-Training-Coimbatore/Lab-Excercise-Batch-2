@@ -1,0 +1,8 @@
+<fb>
+<url>https://www.facebook.com/</url>
+<uid>email</uid>
+<pwd>pass</pwd>
+<btn>//*[@id="login_form"]/table/tbody/tr[2]/td[3]</btn>
+<uidv>stani123</uidv>
+<pdv>pass123</pdv>
+</fb>
