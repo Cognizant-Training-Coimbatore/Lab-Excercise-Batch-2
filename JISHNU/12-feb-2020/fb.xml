@@ -1,0 +1,8 @@
+<fb1>
+<url>https://www.facebook.com/</url>
+<uid>email</uid>
+<pwd>pass</pwd>
+<btn>//*[@id="loginbutton"]</btn>
+<uidv></uidv>
+<pwdv>qwerty</pwdv>
+</fb1>

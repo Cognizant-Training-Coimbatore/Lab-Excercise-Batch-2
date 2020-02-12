@@ -1,0 +1,8 @@
+<irctc>
+<url>https://www.irctc.co.in/nget/train-search</url>
+<from>//*[@id="origin"]/span/input</from>
+<to>//*[@id="destination"]/span/input</to>
+<fromv>KANNUR</fromv>
+<tov>CLT</tov>
+<btn>//*[@id="divMain"]/div/app-main-page/div[1]/div/div[1]/div/div/div[1]/div/app-jp-input/div[3]/form/div[7]/button</btn>
+</irctc>
