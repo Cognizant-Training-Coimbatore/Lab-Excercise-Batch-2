@@ -1,0 +1,16 @@
+Write a program in java
+
+1.Print the following output
+
+**************************************
+           I am learning java
+**************************************
+
+
+2.Input five numbers from user and display the sum and avergae
+
+3.Declare the constant pie = 3.14 and input the radius from the user and display the area of the circle
+
+4.Check number is positive or not
+
+5.Input the string and display the length
