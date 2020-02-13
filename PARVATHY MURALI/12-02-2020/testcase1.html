@@ -1,0 +1,31 @@
+<html>
+<head> 
+<title> Automation Practice </title>
+<script type = "text/javascript">
+	function displaylength()
+	{
+		var x = document.getElementById("t1").value.length;
+		document.getElementById("t2").value = x;
+	}
+
+</script> 
+</head>
+<body>
+<h2> Enter text here and check the length of the string is properly displayed or not </h2>
+<br>
+<br>
+<input type = text id = "t1">
+<br>
+<br>
+<input type = button id = "b1" value = "Click me" onclick="displaylength()">
+<br>
+<br>
+<h2> Total characters in the textbox </h2>
+<br>
+<input type = text id = "t2">
+<br>
+<br>
+
+
+</body>
+</html>
