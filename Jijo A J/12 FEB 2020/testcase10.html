@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> Automation practice </title>
+<script type = "text/javascript">
+	var x,a;
+	function generateNumber()
+	{
+		x = Math.floor(Math.random() * 100) + 1;
+		var y = "Order Number:" + x.toString();
+		alert(y);
+	}
+	function compare()
+	{
+		a = document.getElementById("t1").value;
+		if(a == x.toString())
+		{
+			document.getElementById("result").innerHTML = "Test result: Pass";
+		}
+		else
+		{
+			document.getElementById("result").innerHTML = "Test result: Fail";		}
+		}
+
+</script>
+</head>
+<body>
+<b>
+1. Click on the Generate ID
+<br>
+2. Capture the Order #
+<br>
+3. Enter the order number in the text box
+<br>
+4. Click on compare to find the result 
+</b>
+<br> 
+<br>
+<br>
+<input type = "button" value = "Generate ID" id = "b1" onclick="generateNumber()">
+<br>
+<br>
+<input type = "text" id = "t1">
+<br>
+<br>
+<input type = "button" value = "Check" id ="b2" onclick="compare()">
+
+<br>
+<br>
+<div id = "result" font-color="green">
+Test Result:  
+</div>
+</body>
+</html>

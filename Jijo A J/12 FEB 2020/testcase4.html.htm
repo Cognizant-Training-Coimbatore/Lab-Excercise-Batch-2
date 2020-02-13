@@ -1,0 +1,47 @@
+<html>
+<head> 
+<title> Automation Practice </title>
+<script type = "text/javascript">
+	function reading()
+	{
+		
+		var x = window.prompt("What book do you read?", "Please enter bookname");
+		document.getElementById("t1").value = document.getElementById("t1").value + "Reading " + x + " ";
+		}
+	function surfing()
+	{
+		
+		var x = window.prompt("What subject do you surf?", "Please enter URL");
+		document.getElementById("t1").value = document.getElementById("t1").value + "Surfing " + x + " ";
+		}
+function sports()
+	{
+		
+		var x = window.prompt("What sports do you like?", "Please enter sportsname");
+		document.getElementById("t1").value = document.getElementById("t1").value + "Sports " + x + " ";
+		}
+	function finearts()
+	{
+		
+		var x = window.prompt("What finearts do you like?", "Please enter name");
+		document.getElementById("t1").value = document.getElementById("t1").value + "finearts " + x + " ";
+		}
+</script>
+</head>
+<body>
+<h2> Enter the hobbies </h2>
+<br>
+<br>
+<input type = checkbox id = "c1" onclick="reading()"> Reading
+<input type = checkbox id = "c2" onclick="surfing()"> Surfing net
+<input type = checkbox id = "c3" onclick="sports()"> Sports
+<input type = checkbox id = "c4" onclick="finearts()"> Fine arts
+<br>
+<br>
+<h2> Your hobbies </h2>
+<br>
+<textarea rows = "10" cols = "100" id = "t1"> </textarea>
+
+<h2> Please ensure your hobbies are captured properly </h2> 
+</body>
+</html>
