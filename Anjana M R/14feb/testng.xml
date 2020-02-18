@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-  <test name="Test">
+  <test name="Test1">
     <classes>
-      <class name="test1"/>
+      <class name="chrome"/>
     </classes>
   </test> <!-- Test -->
+   <test name="Test2">
+    <classes>
+      <class name="firefox"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+  
 </suite> <!-- Suite -->
