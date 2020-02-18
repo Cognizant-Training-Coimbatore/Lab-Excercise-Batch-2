@@ -1,0 +1,13 @@
+url=https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1581412528&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3daf6d2a93-3bb8-fe87-70ae-377115a3948c&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015
+
+
+#locators
+uid=i0116
+pwd=i0118
+btn1=idSIButton9
+btn=//*[@id="idSIButton9"]
+
+
+#values
+uidv=aaaaaaa
+pwdv=bbbbbbbbbbbb

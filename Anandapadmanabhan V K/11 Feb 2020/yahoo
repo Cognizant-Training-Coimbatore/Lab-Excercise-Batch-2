@@ -1,0 +1,12 @@
+url=https://login.yahoo.com/config/login?.src=fpctx&.intl=in&.lang=en-IN&.done=https%3A%2F%2Fin.yahoo.com
+
+
+#locators
+uid=login-username
+pwd=pass
+btn=
+
+
+#values
+uidv=aaaaaaa
+pwdv=bbbbbbbbbbbb

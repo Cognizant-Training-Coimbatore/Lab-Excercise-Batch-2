@@ -1,0 +1,11 @@
+url=https://in.linkedin.com/
+
+
+#locators
+uid=session_key
+pwd=session_password
+btn=/html/body/nav/section[2]/form/div[2]/button
+
+#values
+uidv=aaaaaaa
+pwdv=bbbbbbbbbbbb
