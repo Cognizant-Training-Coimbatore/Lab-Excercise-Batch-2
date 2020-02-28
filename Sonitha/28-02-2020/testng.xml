@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test1">
+    <classes>
+      <class name="shaadiApp.testcase1_basic_search"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      <class name="shaadiApp.testcase2_advanced_search"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
