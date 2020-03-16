@@ -1,0 +1,23 @@
+Group Members:
+1.Parvathy Padmanabhan
+2. Anjana M R 
+3. Alan M Shaji
+4. Jijo A J
+5. Jishnu Devadas K M
+
+Modules of the website included in the project:
+1. Login
+2. Search product
+3. Add product to cart
+4. Pincode  check
+5. Add product to wishlist
+6. Place order
+7. Filter results
+
+The whole team worked parallel in all order to complete the work in time
+Steps included:
+1. Creating frame work
+2. Creating POM
+3. Feature files
+4. Test data creation
+5. Coding test steps
